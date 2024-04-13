@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B91C7F1F2BCADB810097B0CF /* SwiftLocation in Frameworks */ = {isa = PBXBuildFile; productRef = B91C7F1E2BCADB810097B0CF /* SwiftLocation */; };
 		B9E1C4802BC9A119003102D3 /* MyAirApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */; };
 		B9E1C4822BC9A119003102D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C4812BC9A119003102D3 /* ContentView.swift */; };
 		B9E1C4842BC9A11B003102D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9E1C4832BC9A11B003102D3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B91C7F1C2BCA359D0097B0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B9E1C47C2BC9A119003102D3 /* MyAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAirApp.swift; sourceTree = "<group>"; };
 		B9E1C4812BC9A119003102D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91C7F1F2BCADB810097B0CF /* SwiftLocation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		B9E1C47E2BC9A119003102D3 /* MyAir */ = {
 			isa = PBXGroup;
 			children = (
+				B91C7F1C2BCA359D0097B0CF /* Info.plist */,
 				B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */,
 				B9E1C4812BC9A119003102D3 /* ContentView.swift */,
 				B9E1C4832BC9A11B003102D3 /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = MyAir;
+			packageProductDependencies = (
+				B91C7F1E2BCADB810097B0CF /* SwiftLocation */,
+			);
 			productName = MyAir;
 			productReference = B9E1C47C2BC9A119003102D3 /* MyAir.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = B9E1C4732BC9A119003102D3;
+			packageReferences = (
+				B91C7F1D2BCADB810097B0CF /* XCRemoteSwiftPackageReference "SwiftLocation" */,
+			);
 			productRefGroup = B9E1C47D2BC9A119003102D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,11 +285,12 @@
 				DEVELOPMENT_TEAM = QYC9Z88RVC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAir/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +298,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcheng.MyAir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +319,12 @@
 				DEVELOPMENT_TEAM = QYC9Z88RVC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAir/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +332,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lcheng.MyAir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B91C7F1D2BCADB810097B0CF /* XCRemoteSwiftPackageReference "SwiftLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftLocation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B91C7F1E2BCADB810097B0CF /* SwiftLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91C7F1D2BCADB810097B0CF /* XCRemoteSwiftPackageReference "SwiftLocation" */;
+			productName = SwiftLocation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9E1C4742BC9A119003102D3 /* Project object */;
 }
