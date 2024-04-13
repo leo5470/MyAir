@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B91C7F1F2BCADB810097B0CF /* SwiftLocation in Frameworks */ = {isa = PBXBuildFile; productRef = B91C7F1E2BCADB810097B0CF /* SwiftLocation */; };
+		B91C7F242BCAE0CC0097B0CF /* AirInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F232BCAE0CC0097B0CF /* AirInfo.swift */; };
+		B91C7F262BCAE3A60097B0CF /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F252BCAE3A60097B0CF /* Station.swift */; };
 		B9E1C4802BC9A119003102D3 /* MyAirApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */; };
 		B9E1C4822BC9A119003102D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C4812BC9A119003102D3 /* ContentView.swift */; };
 		B9E1C4842BC9A11B003102D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9E1C4832BC9A11B003102D3 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		B91C7F1C2BCA359D0097B0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B91C7F232BCAE0CC0097B0CF /* AirInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirInfo.swift; sourceTree = "<group>"; };
+		B91C7F252BCAE3A60097B0CF /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		B9E1C47C2BC9A119003102D3 /* MyAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAirApp.swift; sourceTree = "<group>"; };
 		B9E1C4812BC9A119003102D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B91C7F202BCADD820097B0CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B91C7F232BCAE0CC0097B0CF /* AirInfo.swift */,
+				B91C7F252BCAE3A60097B0CF /* Station.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B91C7F212BCADD990097B0CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9E1C4812BC9A119003102D3 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B91C7F222BCADD9F0097B0CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B9E1C4732BC9A119003102D3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +82,11 @@
 		B9E1C47E2BC9A119003102D3 /* MyAir */ = {
 			isa = PBXGroup;
 			children = (
+				B91C7F222BCADD9F0097B0CF /* ViewModel */,
+				B91C7F212BCADD990097B0CF /* View */,
+				B91C7F202BCADD820097B0CF /* Model */,
 				B91C7F1C2BCA359D0097B0CF /* Info.plist */,
 				B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */,
-				B9E1C4812BC9A119003102D3 /* ContentView.swift */,
 				B9E1C4832BC9A11B003102D3 /* Assets.xcassets */,
 				B9E1C4852BC9A11B003102D3 /* Preview Content */,
 			);
@@ -148,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E1C4822BC9A119003102D3 /* ContentView.swift in Sources */,
+				B91C7F242BCAE0CC0097B0CF /* AirInfo.swift in Sources */,
+				B91C7F262BCAE3A60097B0CF /* Station.swift in Sources */,
 				B9E1C4802BC9A119003102D3 /* MyAirApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
