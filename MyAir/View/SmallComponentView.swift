@@ -36,6 +36,8 @@ struct SmallComponentView: View {
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         .frame(height: 120)
         .clipShape(RoundedRectangle(cornerRadius: 20.0))
+        .shadow(color: .black.opacity(0.4), radius: 2, x: 0, y: 2)
+        .shadow(color: .black.opacity(0.1), radius: 1.5, x: 0, y: 0)
     }
 }
 
