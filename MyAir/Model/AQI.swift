@@ -149,5 +149,8 @@ struct AQIForSingleLocation: Decodable {
     }
 }
 
+struct AQIForMultipleLocations: Decodable {
+    let records: [AQIForSingleLocation]
+}
 
 
