@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Station: Decodable, Equatable {
+struct Station: Decodable, Equatable, Hashable {
     let siteName: String
     let siteEngName: String
     let areaName: String
@@ -32,6 +32,10 @@ struct Station: Decodable, Equatable {
         case siteType = "sitetype"
         case siteID = "siteid"
     }
+}
+
+extension Station: Identifiable {
+    var id: String { siteID }
 }
 
 struct Stations: Decodable {
