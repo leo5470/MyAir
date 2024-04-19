@@ -95,7 +95,7 @@ enum AQI: Int {
     }
 }
 
-struct AQIForSingleLocation: Decodable {
+struct AQIForSingleLocation: Decodable, Hashable {
     let siteName: String
     let county: String
     let aqi: String
