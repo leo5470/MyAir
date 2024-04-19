@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B91C7F1F2BCADB810097B0CF /* SwiftLocation in Frameworks */ = {isa = PBXBuildFile; productRef = B91C7F1E2BCADB810097B0CF /* SwiftLocation */; };
-		B91C7F242BCAE0CC0097B0CF /* AirInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F232BCAE0CC0097B0CF /* AirInfo.swift */; };
+		B91C7F242BCAE0CC0097B0CF /* AQI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F232BCAE0CC0097B0CF /* AQI.swift */; };
 		B91C7F262BCAE3A60097B0CF /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F252BCAE3A60097B0CF /* Station.swift */; };
+		B91C7F2A2BCB764B0097B0CF /* LocalAQIComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F292BCB764B0097B0CF /* LocalAQIComponentView.swift */; };
+		B91C7F2C2BCB7EBB0097B0CF /* SmallComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F2B2BCB7EBB0097B0CF /* SmallComponentView.swift */; };
+		B91C7F2E2BCCF2CA0097B0CF /* LocalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F2D2BCCF2CA0097B0CF /* LocalDataView.swift */; };
+		B91C7F302BCCF2EC0097B0CF /* OtherStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F2F2BCCF2EC0097B0CF /* OtherStationView.swift */; };
+		B91C7F322BCD07590097B0CF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C7F312BCD07590097B0CF /* ContentViewModel.swift */; };
+		B93A0EBD2BD170D500AB2D85 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A0EBC2BD170D500AB2D85 /* APIError.swift */; };
+		B93A0EC32BD224FB00AB2D85 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A0EC22BD224FB00AB2D85 /* Location.swift */; };
+		B93A0EC72BD2611000AB2D85 /* AQIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A0EC62BD2611000AB2D85 /* AQIUtil.swift */; };
+		B93A0EC92BD2660000AB2D85 /* LocalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A0EC82BD2660000AB2D85 /* LocalDataViewModel.swift */; };
 		B9E1C4802BC9A119003102D3 /* MyAirApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */; };
 		B9E1C4822BC9A119003102D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C4812BC9A119003102D3 /* ContentView.swift */; };
 		B9E1C4842BC9A11B003102D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9E1C4832BC9A11B003102D3 /* Assets.xcassets */; };
@@ -18,8 +26,17 @@
 
 /* Begin PBXFileReference section */
 		B91C7F1C2BCA359D0097B0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		B91C7F232BCAE0CC0097B0CF /* AirInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirInfo.swift; sourceTree = "<group>"; };
+		B91C7F232BCAE0CC0097B0CF /* AQI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQI.swift; sourceTree = "<group>"; };
 		B91C7F252BCAE3A60097B0CF /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		B91C7F292BCB764B0097B0CF /* LocalAQIComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAQIComponentView.swift; sourceTree = "<group>"; };
+		B91C7F2B2BCB7EBB0097B0CF /* SmallComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallComponentView.swift; sourceTree = "<group>"; };
+		B91C7F2D2BCCF2CA0097B0CF /* LocalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataView.swift; sourceTree = "<group>"; };
+		B91C7F2F2BCCF2EC0097B0CF /* OtherStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherStationView.swift; sourceTree = "<group>"; };
+		B91C7F312BCD07590097B0CF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		B93A0EBC2BD170D500AB2D85 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B93A0EC22BD224FB00AB2D85 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B93A0EC62BD2611000AB2D85 /* AQIUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIUtil.swift; sourceTree = "<group>"; };
+		B93A0EC82BD2660000AB2D85 /* LocalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataViewModel.swift; sourceTree = "<group>"; };
 		B9E1C47C2BC9A119003102D3 /* MyAir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAirApp.swift; sourceTree = "<group>"; };
 		B9E1C4812BC9A119003102D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91C7F1F2BCADB810097B0CF /* SwiftLocation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +58,9 @@
 		B91C7F202BCADD820097B0CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B91C7F232BCAE0CC0097B0CF /* AirInfo.swift */,
+				B91C7F232BCAE0CC0097B0CF /* AQI.swift */,
 				B91C7F252BCAE3A60097B0CF /* Station.swift */,
+				B93A0EC22BD224FB00AB2D85 /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -52,6 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				B9E1C4812BC9A119003102D3 /* ContentView.swift */,
+				B91C7F292BCB764B0097B0CF /* LocalAQIComponentView.swift */,
+				B91C7F2B2BCB7EBB0097B0CF /* SmallComponentView.swift */,
+				B91C7F2D2BCCF2CA0097B0CF /* LocalDataView.swift */,
+				B91C7F2F2BCCF2EC0097B0CF /* OtherStationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -59,8 +80,26 @@
 		B91C7F222BCADD9F0097B0CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B91C7F312BCD07590097B0CF /* ContentViewModel.swift */,
+				B93A0EC82BD2660000AB2D85 /* LocalDataViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B93A0EBB2BD1708600AB2D85 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				B93A0EBC2BD170D500AB2D85 /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		B93A0EC52BD260FC00AB2D85 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B93A0EC62BD2611000AB2D85 /* AQIUtil.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		B9E1C4732BC9A119003102D3 = {
@@ -82,10 +121,12 @@
 		B9E1C47E2BC9A119003102D3 /* MyAir */ = {
 			isa = PBXGroup;
 			children = (
+				B93A0EC52BD260FC00AB2D85 /* Utilities */,
 				B91C7F222BCADD9F0097B0CF /* ViewModel */,
 				B91C7F212BCADD990097B0CF /* View */,
 				B91C7F202BCADD820097B0CF /* Model */,
 				B91C7F1C2BCA359D0097B0CF /* Info.plist */,
+				B93A0EBB2BD1708600AB2D85 /* Errors */,
 				B9E1C47F2BC9A119003102D3 /* MyAirApp.swift */,
 				B9E1C4832BC9A11B003102D3 /* Assets.xcassets */,
 				B9E1C4852BC9A11B003102D3 /* Preview Content */,
@@ -118,7 +159,6 @@
 			);
 			name = MyAir;
 			packageProductDependencies = (
-				B91C7F1E2BCADB810097B0CF /* SwiftLocation */,
 			);
 			productName = MyAir;
 			productReference = B9E1C47C2BC9A119003102D3 /* MyAir.app */;
@@ -149,7 +189,6 @@
 			);
 			mainGroup = B9E1C4732BC9A119003102D3;
 			packageReferences = (
-				B91C7F1D2BCADB810097B0CF /* XCRemoteSwiftPackageReference "SwiftLocation" */,
 			);
 			productRefGroup = B9E1C47D2BC9A119003102D3 /* Products */;
 			projectDirPath = "";
@@ -177,10 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93A0EC92BD2660000AB2D85 /* LocalDataViewModel.swift in Sources */,
+				B91C7F302BCCF2EC0097B0CF /* OtherStationView.swift in Sources */,
+				B93A0EC32BD224FB00AB2D85 /* Location.swift in Sources */,
+				B91C7F2C2BCB7EBB0097B0CF /* SmallComponentView.swift in Sources */,
 				B9E1C4822BC9A119003102D3 /* ContentView.swift in Sources */,
-				B91C7F242BCAE0CC0097B0CF /* AirInfo.swift in Sources */,
+				B93A0EBD2BD170D500AB2D85 /* APIError.swift in Sources */,
+				B93A0EC72BD2611000AB2D85 /* AQIUtil.swift in Sources */,
+				B91C7F242BCAE0CC0097B0CF /* AQI.swift in Sources */,
+				B91C7F2E2BCCF2CA0097B0CF /* LocalDataView.swift in Sources */,
+				B91C7F322BCD07590097B0CF /* ContentViewModel.swift in Sources */,
 				B91C7F262BCAE3A60097B0CF /* Station.swift in Sources */,
 				B9E1C4802BC9A119003102D3 /* MyAirApp.swift in Sources */,
+				B91C7F2A2BCB764B0097B0CF /* LocalAQIComponentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -296,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -318,11 +366,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyAir/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "打開位置資訊以取得附近測站之空氣品質";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "打開位置資訊以取得附近測站之空氣品質";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -352,11 +403,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyAir/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "打開位置資訊以取得附近測站之空氣品質";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "打開位置資訊以取得附近測站之空氣品質";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,25 +450,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B91C7F1D2BCADB810097B0CF /* XCRemoteSwiftPackageReference "SwiftLocation" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/malcommac/SwiftLocation";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B91C7F1E2BCADB810097B0CF /* SwiftLocation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B91C7F1D2BCADB810097B0CF /* XCRemoteSwiftPackageReference "SwiftLocation" */;
-			productName = SwiftLocation;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9E1C4742BC9A119003102D3 /* Project object */;
 }
