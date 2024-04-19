@@ -10,16 +10,22 @@ import SwiftUI
 struct SmallComponentView: View {
     var caption: String
     var symbolName: String
+    var isNil: Bool
     
     var body: some View {
         ZStack {
             
-            LinearGradient(colors: [.accent, Color("Light Blue")], startPoint: .bottom, endPoint: .top)
+            if isNil{
+                Color("Light Grey")
+            } else {
+                LinearGradient(colors: [.accent, Color("Light Blue")], startPoint: .bottom, endPoint: .top)
+            }
             
             HStack {
                 Text(caption)
                     .font(.system(size: 24, weight: .medium))
                     .foregroundStyle(.white)
+                    .multilineTextAlignment(.leading)
                 
                 Spacer()
                 
@@ -36,11 +42,9 @@ struct SmallComponentView: View {
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         .frame(height: 120)
         .clipShape(RoundedRectangle(cornerRadius: 20.0))
-        .shadow(color: .black.opacity(0.4), radius: 2, x: 0, y: 2)
-        .shadow(color: .black.opacity(0.1), radius: 1.5, x: 0, y: 0)
     }
 }
 
 #Preview {
-    SmallComponentView(caption: "更多\n本地資料", symbolName: "mappin")
+    SmallComponentView(caption: "更多\n本地資料", symbolName: "mappin", isNil: false)
 }
