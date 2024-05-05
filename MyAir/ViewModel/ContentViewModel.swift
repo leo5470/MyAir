@@ -82,7 +82,7 @@ class ContentViewModel: ObservableObject {
         if userLocation == nil {
             throw APIError.LocationError
         }
-        if stations == nil {
+        if stations == nil || stations!.count == 0 {
             throw APIError.NoDataError
         }
         
